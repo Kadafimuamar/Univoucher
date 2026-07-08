@@ -35,11 +35,10 @@ export default function HomePage() {
   return (
     <main className="pageShell">
       <header className="hero">
-        <p className="eyebrow">Unicity Sphere / testnet2</p>
+        <p className="eyebrow">Unicity Sphere</p>
         <h1>UniVoucher</h1>
         <p>
-          Connect-first digital voucher marketplace starter. Payment uses Sphere Connect intent <code>send</code> with
-          base-unit amount and canonical 64-hex coinId.
+          Connect-first digital voucher marketplace starter.
         </p>
       </header>
 

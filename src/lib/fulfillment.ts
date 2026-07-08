@@ -55,8 +55,8 @@ export function fulfillOrderLocally(order: UniVoucherOrder, product?: Product): 
       fulfillment: {
         mode: 'manual',
         note: product
-          ? `No demo stock configured for ${product.name}. Fulfill this order from your supplier/admin flow.`
-          : 'No demo stock configured for this product. Fulfill this order from your supplier/admin flow.',
+          ? `No demo stock configured for ${product.name}.`
+          : 'No demo stock configured for this product.',
       },
       updatedAt: fulfilledAt,
     };
@@ -70,7 +70,7 @@ export function fulfillOrderLocally(order: UniVoucherOrder, product?: Product): 
       voucherCode,
       voucherHash: hashLike(`${order.id}:${voucherCode}:${order.amountBaseUnits}`),
       fulfilledAt,
-      note: 'Demo local fulfillment only. For production, issue vouchers from a server-side supplier/API after payment verification.',
+      note: 'Demo.',
     },
     updatedAt: fulfilledAt,
   };
