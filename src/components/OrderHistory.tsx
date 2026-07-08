@@ -26,7 +26,7 @@ export function OrderHistory() {
       <div className="cardHeader">
         <div>
           <p className="eyebrow">Orders</p>
-          <h2>Local order ledger</h2>
+          <h2>Your Order</h2>
         </div>
         <button className="secondary" onClick={() => clearOrders()} disabled={orders.length === 0}>
           Clear
